@@ -118,17 +118,18 @@ $resultado = mysql_fetch_assoc($result);
              <?php echo $resultado['limpeza'];?>
            </div>
           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Data de Lançamento:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['created'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
              <b>Observações:</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
              <?php echo $resultado['outros'];?>
            </div>
+          <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Data de Lançamento:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['created'];?>
+           </div>
+
                     <!--Fim - Mostra os Dados na Pagina de Visualizar-->
     </div>
   </div>

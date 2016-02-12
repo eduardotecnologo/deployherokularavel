@@ -20,61 +20,60 @@
       </div>
 
         <div class="col-md-12">
-          <form class="form-horizontal" method="POST" action="../cadastro/cad_edit_usuarios.php">
+          <form class="form-horizontal" method="POST" action="../cadastro/cad_edit_clientes.php">
 <div class="form-group">
-     <label for="inputEmail3" class="col-sm-2 control-label">NOME</label>
-<div class="col-sm-10">
-     <input type="text" class="form-control" name="nome" placeholder="Digite o Nome Completo"
-     value="<?php echo $resultado['nome'];?>">
-</div>
-</div>
+    <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="nome" style="width: 15em" value="<?php echo $resultado['nome'];?>">
+    </div>
+  </div>
 
    <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">CPF</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="cpf" style="width: 15em" value="<?php echo $resultado['cpf'];?>">
+      <input type="text" class="form-control" name="cpf" style="width: 15em" value="<?php echo $resultado['cpf'];?>">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">RG</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="rg" style="width: 15em" value="<?php echo $resultado['rg'];?>">
+      <input type="text" class="form-control" name="rg" style="width: 15em" value="<?php echo $resultado['rg'];?>">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">NASCIMENTO</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="nascimento" style="width: 15em" value="<?php echo $resultado['nascimento'];?>">
+      <input type="tex" class="form-control" name="nascimento" style="width: 15em" value="<?php echo $resultado['nascimento'];?>">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">MATRICULA</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="matricula" style="width: 15em" value="<?php echo $resultado['matricula'];?>">
+      <input type="text" class="form-control" name="matricula" style="width: 15em" value="<?php echo $resultado['matricula'];?>">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">MATRICULA II</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="matriculall" style="width: 15em" value="<?php echo $resultado['matriculall'];?>">
+      <input type="text" class="form-control" name="matriculall" style="width: 15em" value="<?php echo $resultado['matriculall'];?>">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">LOGRADOURO</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="logradouro" style="width: 35em" value="<?php echo $resultado['logradouro'];?>">
+      <input type="text" class="form-control" name="logradouro" style="width: 35em" value="<?php echo $resultado['logradouro'];?>">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">NUMERO</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="numero" style="width: 15em" value="<?php echo $resultado['numero'];?>">
+      <input type="text" class="form-control" name="numero" style="width: 15em" value="<?php echo $resultado['numero'];?>">
     </div>
   </div>
 
@@ -88,35 +87,43 @@
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">BAIRRO</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="bairro" style="width: 25em">
+      <input type="text" class="form-control" name="bairro" style="width: 25em">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">CIDADE</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="cidade" style="width: 25em">
+      <input type="text" class="form-control" name="cidade" style="width: 25em">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">UF</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="uf"  style="width: 5em">
+      <input type="text" class="form-control" name="uf"  style="width: 5em">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">CEP</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="cep"  style="width: 5em">
+      <input type="text" class="form-control" name="cep"  style="width: 5em">
     </div>
   </div>
+
+ <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">E-mail</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="email" style="width: 25em">
+    </div>
+  </div>
+
 
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">DDD</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="ddd" style="width: 5em">
+      <input type="text" class="form-control" name="ddd" style="width: 5em">
     </div>
   </div>
 
@@ -130,7 +137,7 @@
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">CELULAR</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="celular" style="width: 15em">
+      <input type="text" class="form-control" name="celular" style="width: 15em">
     </div>
   </div>
 
@@ -228,14 +235,14 @@
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">VALOR DO CONTRATO</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="valor_contrato" style="width: 10em">
+      <input type="text" class="form-control" name="valor_contrato" style="width: 10em">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">OBSERVAÇÕES</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="observacoes" >
+      <input type="text" class="form-control" name="observacoes" >
     </div>
   </div>
 

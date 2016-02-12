@@ -16,7 +16,7 @@ $resultado = mysql_fetch_assoc($result);
     </div>
 
             <div class="page-header">
-        <h1>Dados Derais de Clientes</h1>
+        <h1>Dados Gerais de Clientes</h1>
       </div>
       <div class="pull-right">
         <a href="admin.php?link=15&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
@@ -126,6 +126,28 @@ $resultado = mysql_fetch_assoc($result);
            <div class="col-xs-9 col-sm-9 col-md-15">
              <?php echo $resultado['celular'];?>
            </div>
+
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Conta:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['conta'];?>
+           </div>
+
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Agencia:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['agencia'];?>
+           </div>
+
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Operação:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['operacao'];?>
+           </div>
+
            <div class="col-xs-9 col-sm-9 col-md-15">
              <b>Orgao:</b>
            </div>

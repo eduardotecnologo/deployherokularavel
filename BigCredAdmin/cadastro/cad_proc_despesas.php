@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once("../../admin/seguranca.php");
-include_once("../../sistema/conexao.php");
+include_once("../admin/seguranca.php");
+include_once("../sistema/conexao.php");
 $agua               = $_POST["agua"];
 $luz                  = $_POST["luz"];
 $telefone         = $_POST["telefone"];
@@ -32,7 +32,7 @@ $query = mysql_query("INSERT INTO despesas (agua, luz, telefone, celular, intern
 
 if (mysql_affected_rows() != 0) {
    echo"
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=20'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=20'>
              <script type=\"text/javascript\">
              alert(\"Dados Cadastrado com Sucesso!!!\");
              </script>
@@ -40,7 +40,7 @@ if (mysql_affected_rows() != 0) {
 }else
       {
         echo "
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=19'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=19'>
              <script type=\"text/javascript\">
              alert(\"Erro ao Cadastrar Novos Dados!!!\");
              </script>

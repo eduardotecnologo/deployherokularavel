@@ -19,7 +19,7 @@ $linhas = mysql_affected_rows();
 
 if (mysql_affected_rows() != 0) { //Menssagem Javascript
    echo"
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=7'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=7'>
              <script type=\"text/javascript\">
              alert(\"Prazo Apagado com Sucesso!!!\");
              </script>
@@ -27,7 +27,7 @@ if (mysql_affected_rows() != 0) { //Menssagem Javascript
 }else
       {
     echo "
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=7'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=7'>
              <script type=\"text/javascript\">
              alert(\"Erro ao Apagar Prazo!!!\");
              </script>

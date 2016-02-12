@@ -21,7 +21,7 @@ $query = mysql_query("INSERT INTO usuarios (nome, email, login, senha, nivel_ace
 
 if (mysql_affected_rows() != 0) {
    echo"
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=2'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=2'>
              <script type=\"text/javascript\">
              alert(\"Usuário Cadastrado com Sucesso!!!\");
              </script>
@@ -29,7 +29,7 @@ if (mysql_affected_rows() != 0) {
 }else
       {
 		echo "
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=2'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=2'>
              <script type=\"text/javascript\">
              alert(\"Erro ao Cadastrar Usuário!!!\");
              </script>

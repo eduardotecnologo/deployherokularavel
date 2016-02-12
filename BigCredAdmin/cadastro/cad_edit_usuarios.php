@@ -22,7 +22,7 @@ $query = mysql_query("UPDATE usuarios set nome ='$nome', email = '$email', login
 
 if (mysql_affected_rows() != 0) { //Menssagem Javascript
    echo"
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=2'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=2'>
              <script type=\"text/javascript\">
              alert(\"Usuário Editado com Sucesso!!!\");
              </script>
@@ -30,7 +30,7 @@ if (mysql_affected_rows() != 0) { //Menssagem Javascript
 }else
       {
 		echo "
-         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/BigCredAdmin/admin/admin.php?link=2'>
+         <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=2'>
              <script type=\"text/javascript\">
              alert(\"Erro ao Editar o Usuário!!!\");
              </script>
