@@ -24,60 +24,44 @@
                 <label for="snome">Telefone</label>
                 <input type="text" name="telefone" style="width: 15em" placeholder="Valor da Conta" />
             </div><div class="campo">
-                <label for="snome">Celular</label>
-                <input type="text" name="celular" style="width: 15em" placeholder="Valor da Conta" />
+                <label for="snome">Internet</label>
+                <input type="text" name="internet" style="width: 15em" placeholder="Valor da Conta" />
             </div>
         </fieldset>
-        <fieldset>
+         <fieldset>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome">Internet</label>
-                <input type="text" name="internet" style="width: 20em" placeholder="Valor da Conta" />
-            </div>
-            <div class="campo">
-                <label for="snome">Aluguel</label>
+                <label for="nome">Aluguel</label>
                 <input type="text" name="aluguel" style="width: 20em" placeholder="Valor da Conta" />
             </div>
-        </fieldset>
-        <fieldset>
-        <fieldset class="grupo">
             <div class="campo">
-                <label for="nome">Condominio</label>
-                <input type="text" name="condominio" style="width: 20em" placeholder="Valor da Conta" />
+                <label for="snome">Condominio</label>
+                <input type="text" name="condominio" style="width: 15em" placeholder="Valor da Conta" />
             </div>
             <div class="campo">
-                <label for="snome">Condução</label>
-                <input type="text" name="conducao" style="width: 15em" placeholder="Valor da Conta" />
-            </div>
-            <div class="campo">
-                <label for="snome">Emprestimos</label>
-                <input type="text" name="emprestimos" style="width: 15em" placeholder="Valor da Conta" />
-            </div><div class="campo">
-                <label for="snome">Gráfica</label>
+                <label for="snome">Grafica</label>
                 <input type="text" name="grafica" style="width: 15em" placeholder="Valor da Conta" />
-            </div>
-        </fieldset>
-        <fieldset>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="nome">Contador</label>
+            </div><div class="campo">
+                <label for="snome">Contador</label>
                 <input type="text" name="contador" style="width: 15em" placeholder="Valor da Conta" />
             </div>
+        </fieldset>
+        <fieldset>
+        <fieldset class="grupo">
             <div class="campo">
-                <label for="snome">Manutenção</label>
-                <input type="text" name="manutencao" style="width: 15em" placeholder="Valor da Conta" />
+                <label for="nome">Manutencao</label>
+                <input type="text" name="manutencao" style="width: 20em" placeholder="Valor da Conta" />
             </div>
-             <div class="campo">
+            <div class="campo">
                 <label for="snome">Limpeza</label>
                 <input type="text" name="limpeza" style="width: 15em" placeholder="Valor da Conta" />
             </div>
-        </fieldset>
+            <div class="campo">
+                <label for="snome">Celular</label>
+                <input type="text" name="celular" style="width: 15em" placeholder="Valor da Conta" />
+            </div>
+            </fieldset>
 
-      <div class="campo">
-            <label for="mensagem">Observações</label>
-            <textarea rows="6" class="form-control ckeditor" style="width: 20em"
-            name="outros" placeholder="Observaçoes"></textarea>
-        </div>
 
         <button type="submit" class='btn btn-success'>Cadastrar</button></a>
 

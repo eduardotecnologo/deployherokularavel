@@ -28,16 +28,16 @@ include_once("../sistema/conexao.php");
   <?php
          include_once("menu_admin.php");
 
-            $link = $_GET["link"];
-            $pag[1] = "bem_vindo.php";
-            $pag[2] = "lista_user.php";
-            $pag[3] = "cad_user.php";
-            $pag[4] = "editar_user.php";
-            $pag[5] = "visual_user.php";
-            $pag[6] = "../clientes/cad_clientes.php";
-            $pag[7] = "../clientes/cad_categorias.php";
-            $pag[8] = "../categorias/orgaos.php";
-            $pag[9] = "../categorias/tipo.php";
+            $link        = $_GET["link"];
+            $pag[1]   = "bem_vindo.php";
+            $pag[2]   = "lista_user.php";
+            $pag[3]   = "cad_user.php";
+            $pag[4]   = "editar_user.php";
+            $pag[5]   = "visual_user.php";
+            $pag[6]   = "../clientes/cad_clientes.php";
+            $pag[7]   = "../clientes/cad_categorias.php";
+            $pag[8]   = "../categorias/orgaos.php";
+            $pag[9]   = "../categorias/tipo.php";
             $pag[10] = "../categorias/tabela.php";
             $pag[11] = "../categorias/prazo.php";
             $pag[12] = "../categorias/banco.php";
@@ -49,6 +49,7 @@ include_once("../sistema/conexao.php");
             $pag[18] = "../cadastro/apaga_clientes.php";
             $pag[19] = "controle_despesas.php";
             $pag[20] = "visual_despesas.php";
+            $pag[21] = "../cadastro/cad_edit_dispesas.php";
 
 
 

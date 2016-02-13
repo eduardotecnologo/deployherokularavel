@@ -1,138 +1,65 @@
-   <?php
-$id = $_GET['id'];
-//Executa a Consulta
-$result = mysql_query("SELECT * FROM despesas WHERE id = '$id' LIMIT 1");
-$resultado = mysql_fetch_assoc($result);
-   ?>
-   <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
+  <?php
+         $resultado=mysql_query("SELECT * FROM despesas ORDER BY 'id'");
+         $linhas=mysql_num_rows($resultado);
+  ?>
+
     <div class="container theme-showcase" role="main">
 
-
-    </div>
-
             <div class="page-header">
-        <h1>Dados Gerais das Despesas</h1>
+        <h1>Lista de Clientes Cadastrados</h1>
       </div>
+
+      <div class="row espaco">
       <div class="pull-right">
-      <a href="admin.php?link=17&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-warning'>Editar</button></a>
-      <a href="../cadastro/apaga_clientes.php?id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-danger'>Apagar</button></a>
-
-
-<!--Inicio - Mostra os Dados na Pagina de Visualizar-->
+        <a href="admin.php?link=19"><button type="button" class='btn btn-default'>Novo</button></a>
+      </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Mês de Lançamento :</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['id'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Água:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['agua'];?>
-           </div>
-            <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Luz:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['luz'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Telefone:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['telefone'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Celular:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['celular'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Internet:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['internet'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Aluguel:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['aluguel'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Condominio:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['condominio'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Condução:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['conducao'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Emprestimos:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['emprestimos'];?>
-           </div>
-           <div class="col-xs-3 col-sm-9 col-md-15">
-             <b>Pagamentos:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['pagamentos'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Gráficas:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['grafica'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Contador:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['contador'];?>
-           </div>
-            <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Manutenção:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['manutencao'];?>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Limpeza:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['limpeza'];?>
-           </div>
-          <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Observações:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['outros'];?>
-           </div>
-          <div class="col-xs-9 col-sm-9 col-md-15">
-             <b>Data de Lançamento:</b>
-           </div>
-           <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['created'];?>
-           </div>
+        <div class="col-md-2">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Água</th>
+                <th>Luz</th>
+                <th>Telefone</th>
+                <th>Celular</th>
+                <th>Internet</th>
+                <th>Aluguel</th>
+                <th>Condominio</th>
+                <th>Grafica</th>
+                <th>Contador</th>
+                <th>Manutencao</th>
+                <th>limpeza</th>
+                <th>Data:</th>
+              </tr>
+            </thead>
+            <tbody>
+            <?php
+    while ($linhas = mysql_fetch_array(
+      $resultado)) {
+           echo "<tr>";
+               echo "<td>".$linhas['agua']."</td>";
+               echo "<td>".$linhas['luz']."</td>";
+               echo "<td>".$linhas['telefone']."</td>";
+               echo "<td>".$linhas['celular']."</td>";
+               echo "<td>".$linhas['internet']."</td>";
+               echo "<td>".$linhas['aluguel']."</td>";
+               echo "<td>".$linhas['condominio']."</td>";
+               echo "<td>".$linhas['grafica']."</td>";
+                echo "<td>".$linhas['contador']."</td>";
+               echo "<td>".$linhas['manutencao']."</td>";
+               echo "<td>".$linhas['limpeza']."</td>";
+              echo "<td>".$linhas['created']."</td>";
 
-                    <!--Fim - Mostra os Dados na Pagina de Visualizar-->
-    </div>
-  </div>
-</form>
-</body>
-</html>
+?>
+<td>
+<a href='admin.php?link=17&id=<?php echo $linhas['id'];?>'><button type='button' class='btn btn-warning'>Editar</button></a>
+<a href='../cadastro/apaga_despesas.php?id=<?php echo $linhas['id'];?>'><button type='button' class='btn btn-danger'>Apagar</button></a>
+<?php
+           echo "</tr>";
+                }
+            ?>
+
+            </tbody>
+          </table>
+        </div>

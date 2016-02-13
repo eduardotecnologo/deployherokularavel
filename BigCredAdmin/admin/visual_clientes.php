@@ -19,11 +19,11 @@ $resultado = mysql_fetch_assoc($result);
         <h1>Dados Gerais de Clientes</h1>
       </div>
       <div class="pull-right">
-        <a href="admin.php?link=15&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
+        <a href="admin.php?link=20&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
 
         <a href="admin.php?link=17&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-warning'>Editar</button></a>
 
-        <a href="../cadastro/apaga_clientes.php?id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-danger'>Apagar</button></a>
+        <a href="../cadastro/apaga_despesas.php?id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-danger'>Apagar</button></a>
 
 
 <!--Inicio - Mostra os Dados na Pagina de Visualizar-->
