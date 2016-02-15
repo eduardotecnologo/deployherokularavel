@@ -14,72 +14,93 @@
       <div class="row espaco">
 
        <div class="pull-right">
-        <a href="admin.php?link=2&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
-        <a href="../cadastro/apaga.php?id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-danger'>Apagar</button></a>
+        <a href="admin.php?link=20&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
+        <a href="../cadastro/apaga_despesas.php?id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-danger'>Apagar</button></a>
 
 
         </div>
       </div>
 
         <div class="col-md-12">
-          <form class="form-horizontal" method="POST" action="../cadastro/cad_edit_usuarios.php">
+          <form class="form-horizontal" method="POST" action="../cadastro/cad_edit_despesas.php">
 <div class="form-group">
-     <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
+     <label for="inputEmail3" class="col-sm-2 control-label">Água</label>
 <div class="col-sm-10">
-     <input type="text" class="form-control" name="nome" placeholder="Digite o Nome Completo"
-     value="<?php echo $resultado['nome'];?>">
+     <input type="text" class="form-control" name="nome" style="width: 20em" value="<?php echo $resultado['agua'];?>">
 </div>
 </div>
 
    <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">E-mail</label>
+    <label for="inputEmail3" class="col-sm-2 control-label">Luz</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" name="email" placeholder="Digite o E-mail"
-      value="<?php echo $resultado['email'];?>">
+      <input type="email" class="form-control" name="luz" style="width: 20em" value="<?php echo $resultado['luz'];?>">
     </div>
   </div>
 
  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Usuário</label>
+    <label for="inputEmail3" class="col-sm-2 control-label">Telefone</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="usuario" placeholder="Digite o Nome de Usuário"
-      value="<?php echo $resultado['login'];?>">
+      <input type="text" class="form-control" name="telefone" style="width: 20em" value="<?php echo $resultado['telefone'];?>">
     </div>
   </div>
 
   <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Senha</label>
+    <label for="inputEmail3" class="col-sm-2 control-label">Internet</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="senha" placeholder="Digite a Senha">
+      <input type="text" class="form-control" name="internet" style="width: 20em" value="<?php echo $resultado['telefone'];?>">
     </div>
   </div>
 
    <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Nível de Acesso</label>
+    <label for="inputEmail3" class="col-sm-2 control-label">Aluguel</label>
     <div class="col-sm-10">
-      <select class="form-control" name="nivel_acessos">
-
-          <option>Seleciona</option>
-          <option value="1"
-          <?php
-          if($resultado[nivel_acessos_id] == 1){
-                echo selected;
-             }
-           ?>
-            >Administrador</option>
-
-          <option value="2"
-          <?php
-          if($resultado[nivel_acessos_id] == 2){
-                echo selected;
-            }
-          ?>
-          >Usuário</option>
-      </select>
+      <input type="email" class="form-control" name="luz" style="width: 20em" value="<?php echo $resultado['luz'];?>">
     </div>
   </div>
 
-  <input type="hidden" name="id" value="<?php echo $resultado['id'];?>">
+ <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Condominio</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="telefone" style="width: 20em" value="<?php echo $resultado['telefone'];?>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Contador</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="conttador" style="width: 20em" value="<?php echo $resultado['conttador'];?>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Grafica</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="grafica" style="width: 20em" value="<?php echo $resultado['grafica'];?>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Manutencao</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="manutencao" style="width: 20em" value="<?php echo $resultado['manutencao'];?>">
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Limpeza</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="limpeza" style="width: 20em" value="<?php echo $resultado['limpeza'];?>">
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Celular</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="celular" style="width: 20em" value="<?php echo $resultado['celular'];?>">
+    </div>
+  </div>
+
+
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">

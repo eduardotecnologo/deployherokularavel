@@ -36,7 +36,6 @@ $status_id                        = $_POST["status_id"];
 $comicao_geral                = $_POST["comicao_geral"];
 $valor_comicao_geral       = $_POST["valor_comicao_geral"];
 $status_comicao_id          = $_POST["status_comicao_id"];
-$anexo_proposta              = $_FILES['anexo_proposta']['name'];
 $anexo_documentos         = $_FILES['anexo_documentos']['name'];
 $observacoes                   = $_POST["observacoes"];
 
@@ -45,8 +44,8 @@ $query = mysql_query("UPDATE clientes set  nome = '$nome', cpf =  '$cpf', rg = '
   uf = '$uf', cep = '$cep', email = '$email', ddd = '$ddd', telefone = '$telefone', celular = '$celular', conta = '$conta', agencia = '$agencia',
   operacao = '$operacao', orgao_id = '$orgao_id', tipo_id = '$tipo_id', tabela_id = '$tabela_id', prazo_id = '$prazo_id', banco_id = '$banco_id',
   parceiro_id = '$parceiro_id', promotor_id = '$promotor_id', valor_contrato = '$valor_contrato', porc_comicao_promotor = '$porc_comicao_promotor',
-  valor_comicao = '$valor_comicao', status_id = '$status_id', comicao_geral = '$comicao_geral', valor_comicao_geral = '$valor_comicao_geral', status_comicao_id = '$status_comicao_id',
-  anexo_proposta = '$anexo_proposta', anexo_documentos = '$anexo_documentos', observacoes = '$observacoes', modified  = NOW() WHERE id='$id'");
+  valor_comicao = '$valor_comicao', status_id = '$status_id', comicao_geral = '$comicao_geral', valor_comicao_geral = '$valor_comicao_geral',
+  status_comicao_id = '$status_comicao_id', anexo_documentos = '$anexo_documentos', observacoes = '$observacoes', modified  = NOW() WHERE id='$id'");
 ?>
 
 

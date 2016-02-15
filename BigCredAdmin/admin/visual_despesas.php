@@ -53,7 +53,7 @@
 
 ?>
 <td>
-<a href='admin.php?link=17&id=<?php echo $linhas['id'];?>'><button type='button' class='btn btn-warning'>Editar</button></a>
+<a href='admin.php?link=21&id=<?php echo $linhas['id'];?>'><button type='button' class='btn btn-warning'>Editar</button></a>
 <a href='../cadastro/apaga_despesas.php?id=<?php echo $linhas['id'];?>'><button type='button' class='btn btn-danger'>Apagar</button></a>
 <?php
            echo "</tr>";

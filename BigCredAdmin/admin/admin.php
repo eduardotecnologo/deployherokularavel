@@ -49,7 +49,9 @@ include_once("../sistema/conexao.php");
             $pag[18] = "../cadastro/apaga_clientes.php";
             $pag[19] = "controle_despesas.php";
             $pag[20] = "visual_despesas.php";
-            $pag[21] = "../cadastro/cad_edit_dispesas.php";
+            $pag[21] = "editar_despesas.php";
+            $pag[22] = "../cadastro/cad_edit_dispesas.php";
+            $pag[23] = "../cadastro/apaga_despesas.php";
 
 
 

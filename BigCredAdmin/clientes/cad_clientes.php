@@ -264,9 +264,6 @@
     <label for="exampleInputFile">Enviar Documentos</label>
     <input type="file" name="anexo_documentos">
     <p class="help-block">Formatos: pdf, jpeg, jpg, doc.</p>
-      <label for="exampleInputFile">Enviar Proposta</label>
-    <input type="file"  name="anexo_proposta">
-    <p class="help-block">Formatos: pdf, jpeg, jpg, doc.</p>
   </div>
       <div class="campo">
             <label for="mensagem">Observações</label>

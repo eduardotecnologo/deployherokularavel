@@ -14,7 +14,7 @@
       <div class="row espaco">
 
        <div class="pull-right">
-        <a href="admin.php?link=15&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
+        <a href="admin.php?link=20&id=<?php echo $resultado['id'];?>"><button type="button" class='btn btn-info'>Listar</button></a>
 
         </div>
       </div>
@@ -24,7 +24,7 @@
 <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="nome" style="width: 15em" value="<?php echo $resultado['nome'];?>">
+      <input type="text" class="form-control" name="nome" style="width: 30em" value="<?php echo $resultado['nome'];?>">
     </div>
   </div>
 
@@ -80,7 +80,7 @@
  <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">COMPLEMENTO</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="complemento" value="<?php echo $resultado['complemento'];?>">
+      <input type="text" class="form-control" name="complemento" style="width: 15em" value="<?php echo $resultado['complemento'];?>">
     </div>
   </div>
 
@@ -130,7 +130,7 @@
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">TELEFONE</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="telefone" value="<?php echo $resultado['telefone'];?>">
+      <input type="text" class="form-control" name="telefone"  style="width: 15em" value="<?php echo $resultado['telefone'];?>">
     </div>
   </div>
 
@@ -249,7 +249,7 @@
    <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Nível de Acesso</label>
     <div class="col-sm-10">
-      <select class="form-control" name="nivel_acessos">
+      <select class="form-control" name="nivel_acessos" style="width: 15em">
 
           <option>Seleciona</option>
           <option value="1"

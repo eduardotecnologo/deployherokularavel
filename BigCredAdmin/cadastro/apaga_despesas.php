@@ -33,7 +33,6 @@ if (mysql_affected_rows() != 0) { //Menssagem Javascript
              </script>
   ";
 }
-rro
 ?>
   </body>
 </html>
