@@ -29,7 +29,8 @@
             <li><a href="admin.php?link=6">Cadastrar Clientes</a></li>
             <li><a href="admin.php?link=7">Cadastrar Categorias</a></li>
             <li><a href="admin.php?link=19">Cadastrar Despesas</a></li>
-            <li><a href="admin.php?link=21">Históricos de Despesas</a></li>
+            <li><a href="admin.php?link=20">Históricos de Despesas</a></li>
+            <li><a href="admin.php?link=23">Lista Telefonica</a></li>
             <li><a href="sair.php">Sair</a></li>
         </ul>
 </div>

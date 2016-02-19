@@ -13,7 +13,7 @@
     <fieldset>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome">Nome</label>
+                <label for="snome">Nome</label>
                 <input type="text" name="nome" style="width: 20em" placeholder="Digite o Nome Completo" />
             </div>
             <div class="campo">
@@ -36,7 +36,7 @@
             </div>
             <div class="campo">
                 <label for="snome">Matrícula(2)</label>
-                <input type="text" name="matriculaII" style="width: 20em" placeholder="Digite a Matrícula(2)" />
+                <input type="text" name="matricul" style="width: 20em" placeholder="Digite a Matrícula(2)" />
             </div>
         </fieldset>
         <h3>Endereço</h3>
@@ -78,7 +78,7 @@
         <fieldset class="grupo">
             <div class="campo">
                 <label for="nome">E-Mail</label>
-                <input type="text" name="email" style="width: 20em" placeholder="Digite o E-mail(Não Obrigatório)" />
+                <input type="email" name="email" style="width: 20em" placeholder="Digite o E-mail(Não Obrigatório)" />
             </div>
             <div class="campo">
                 <label for="snome">DDD</label>
@@ -183,7 +183,7 @@
             </div>
             <div class="campo">
                     <label for="snome">Parceiro</label>
-                <select class="form-control" name="parceiro_id " style="width: 10em">
+                <select class="form-control" name="parceiro_id" style="width: 10em">
           <option>Seleciona</option>
           <?php
               $resultado=mysql_query("SELECT * FROM parceiro");
@@ -196,11 +196,11 @@
       </select>
             </div>
             <div class="campo">
-                    <label for="snome">Promotor</label>
-                <select class="form-control" name="promotor_id " style="width: 10em">
+                   <label for="snome">Promotor</label>
+                <select class="form-control" name="usuarios_id" style="width: 10em">
           <option>Seleciona</option>
           <?php
-              $resultado=mysql_query("SELECT * FROM promotor");
+              $resultado=mysql_query("SELECT * FROM usuarios");
           while($dados = mysql_fetch_assoc($resultado)){
          ?>
          <option value="<?php echo $dados['id'];?>"><?php echo $dados['nome'];?></option>

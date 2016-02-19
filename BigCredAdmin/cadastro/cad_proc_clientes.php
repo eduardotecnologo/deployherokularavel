@@ -15,7 +15,7 @@ $cpf                                 = $_POST["cpf"];
 $rg                                   = $_POST["rg"];
 $nascimento                   = $_POST["nascimento"];
 $matricula                       = $_POST["matricula"];
-$matriculaII                     = $_POST["matriculaII"];
+$matricul                     = $_POST["matricul"];
 $logradouro                     = $_POST["logradouro"];
 $numero                          = $_POST["numero"];
 $complemento                = $_POST["complemento"];
@@ -36,7 +36,7 @@ $tabela_id                       = $_POST["tabela_id"];
 $prazo_id                        = $_POST["prazo_id"];
 $banco_id                       = $_POST["banco_id"];
 $parceiro_id                    = $_POST["parceiro_id"];
-$promotor_id                   = $_POST["promotor_id"];
+$usuarios_id                   = $_POST["usuarios_id"];
 $valor_contrato                = $_POST["valor_contrato"];
 $porc_comicao_promotor = $_POST["porc_comicao_promotor"];
 $valor_comicao                = $_POST["valor_comicao"];
@@ -74,12 +74,12 @@ if($_FILES['anexo_documentos']['error'] != 0){
 //Faz a verificação da extensao do arquivo
 $extensao = strtolower(end(explode('.', $_FILES['anexo_documentos']['name'])));
 if(array_search($extensao, $_UP['extensoes'])=== false){
-  $query = mysql_query("INSERT INTO clientes (nome, cpf, rg, nascimento, matricula, matriculaII,logradouro, numero, complemento, bairro, cidade,
-  uf, cep, email, ddd, telefone, celular, conta, agencia, operacao, orgao_id,tipo_id, tabela_id, prazo_id, banco_id, parceiro_id, promotor_id, valor_contrato, porc_comicao_promotor,
+  $query = mysql_query("INSERT INTO clientes (nome, cpf, rg, nascimento, matricula, matricul,logradouro, numero, complemento, bairro, cidade,
+  uf, cep, email, ddd, telefone, celular, conta, agencia, operacao, orgao_id,tipo_id, tabela_id, prazo_id, banco_id, parceiro_id, usuarios_id, valor_contrato, porc_comicao_promotor,
   valor_comicao, status_id, comicao_geral, status_comicao_id, observacoes, created )
-    VALUES ('$nome', '$cpf', '$rg', '$nascimento', '$matricula', '$matriculaII','$logradouro', '$numero', '$complemento', '$bairro','$cidade', '$uf', '$cep'
+    VALUES ('$nome', '$cpf', '$rg', '$nascimento', '$matricula', '$matricul','$logradouro', '$numero', '$complemento', '$bairro','$cidade', '$uf', '$cep'
     , '$email', '$ddd', '$telefone', '$celular', '$conta', '$agencia','$operacao', '$orgao_id','$tipo_id', '$tabela_id', '$prazo_id', '$banco_id', '$parceiro_id',
-    '$promotor_id', '$valor_contrato', '$porc_comicao_promotor','$valor_comicao', '$status_id', '$comicao_geral', '$status_comicao_id', '$observacoes', NOW())");
+    '$usuarios_id', '$valor_contrato', '$porc_comicao_promotor','$valor_comicao', '$status_id', '$comicao_geral', '$status_comicao_id', '$observacoes', NOW())");
 echo"
          <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=15'>
              <script type=\"text/javascript\">
@@ -92,11 +92,11 @@ echo"
 else if ($_UP['tamanho'] < $_FILES['anexo_documentos']['size']){
   echo "";
    $query = mysql_query("INSERT INTO clientes (nome, cpf, rg, nascimento, matricula, matriculaII,logradouro, numero, complemento, bairro, cidade,
-  uf, cep, email, ddd, telefone, celular, conta, agencia, operacao, orgao_id,tipo_id, tabela_id, prazo_id, banco_id, parceiro_id, promotor_id, valor_contrato, porc_comicao_promotor,
+  uf, cep, email, ddd, telefone, celular, conta, agencia, operacao, orgao_id,tipo_id, tabela_id, prazo_id, banco_id, parceiro_id, usuarios_id, valor_contrato, porc_comicao_promotor,
   valor_comicao, status_id, comicao_geral, status_comicao_id, observacoes, created )
     VALUES ('$nome', '$cpf', '$rg', '$nascimento', '$matricula', '$matriculaII','$logradouro', '$numero', '$complemento', '$bairro','$cidade', '$uf', '$cep'
     , '$email', '$ddd', '$telefone', '$celular', '$conta', '$agencia','$operacao', '$orgao_id','$tipo_id', '$tabela_id', '$prazo_id', '$banco_id', '$parceiro_id',
-    '$promotor_id', '$valor_contrato', '$porc_comicao_promotor','$valor_comicao', '$status_id', '$comicao_geral', '$status_comicao_id', '$observacoes', NOW())");
+    '$usuarios_id', '$valor_contrato', '$porc_comicao_promotor','$valor_comicao', '$status_id', '$comicao_geral', '$status_comicao_id', '$observacoes', NOW())");
 
 echo"
          <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=15'>
@@ -120,12 +120,12 @@ else{
   //Verificar se é possivel mover o arquivo para a pasta escolhida
   if(move_uploaded_file($_FILES['anexo_documentos']['tmp_name'], $_UP['pasta']. $nome_final)){
     //Upload efetuado com sucesso, exibe a mensagem
-    $query = mysql_query("INSERT INTO clientes (nome, cpf, rg, nascimento, matricula, matriculaII,logradouro, numero, complemento, bairro, cidade,
-  uf, cep, email, ddd, telefone, celular, conta, agencia, operacao, orgao_id,tipo_id, tabela_id, prazo_id, banco_id, parceiro_id, promotor_id, valor_contrato, porc_comicao_promotor,
+    $query = mysql_query("INSERT INTO clientes (nome, cpf, rg, nascimento, matricula, matricul,logradouro, numero, complemento, bairro, cidade,
+  uf, cep, email, ddd, telefone, celular, conta, agencia, operacao, orgao_id,tipo_id, tabela_id, prazo_id, banco_id, parceiro_id, usuarios_id, valor_contrato, porc_comicao_promotor,
   valor_comicao, status_id, comicao_geral, status_comicao_id, anexo_documentos,observacoes, created )
-    VALUES ('$nome', '$cpf', '$rg', '$nascimento', '$matricula', '$matriculaII','$logradouro', '$numero', '$complemento', '$bairro','$cidade', '$uf', '$cep'
+    VALUES ('$nome', '$cpf', '$rg', '$nascimento', '$matricula', '$matricul','$logradouro', '$numero', '$complemento', '$bairro','$cidade', '$uf', '$cep'
     , '$email', '$ddd', '$telefone', '$celular', '$conta', '$agencia','$operacao', '$orgao_id','$tipo_id', '$tabela_id', '$prazo_id', '$banco_id', '$parceiro_id',
-    '$promotor_id', '$valor_contrato', '$porc_comicao_promotor','$valor_comicao', '$status_id', '$comicao_geral', '$status_comicao_id', '$nome_final', '$observacoes', NOW())");
+    '$usuarios_id', '$valor_contrato', '$porc_comicao_promotor','$valor_comicao', '$status_id', '$comicao_geral', '$status_comicao_id', '$nome_final', '$observacoes', NOW())");
 
 echo"
          <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php?link=15'>

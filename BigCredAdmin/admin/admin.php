@@ -52,6 +52,7 @@ include_once("../sistema/conexao.php");
             $pag[21] = "editar_despesas.php";
             $pag[22] = "../cadastro/cad_edit_dispesas.php";
             $pag[23] = "../cadastro/apaga_despesas.php";
+            $pag[23] = "lista_tel.php";
 
 
 

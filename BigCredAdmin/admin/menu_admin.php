@@ -8,7 +8,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-  <a class="navbar-brand" href="http://localhost/BigCredAdmin/admin/admin.php">Página Administrativa</a>
+  <a class="navbar-brand" href="http://localhost/Estudos-PHP/BigCredAdmin/admin/admin.php">Página Administrativa</a>
 </div>
 <div id="navbar" class="navbar-collapse collapse">
   <ul class="nav navbar-nav">
@@ -21,6 +21,8 @@
         <li><a href="admin.php?link=6">Cadastrar Clientes</a></li>
         <li><a href="admin.php?link=7">Cadastrar Categorias</a></li>
         <li><a href="admin.php?link=19">Controle de Despesas</a></li>
+        <li><a href="admin.php?link=20">Históricos de Despesas</a></li>
+        <li><a href="admin.php?link=23">Lista Telefonica</a></li>
       </ul>
     </li>
     <li><a href="sair.php">Sair</a></li>

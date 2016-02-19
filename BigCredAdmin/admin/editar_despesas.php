@@ -100,6 +100,13 @@
     </div>
   </div>
 
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Total</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="total" style="width: 20em" value="<?php echo $resultado['total'];?>">
+    </div>
+  </div>
+
 
 
   <div class="form-group">

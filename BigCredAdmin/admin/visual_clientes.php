@@ -70,9 +70,10 @@ $resultado = mysql_fetch_assoc($result);
              <b>Matricula(2):</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['matricula(2)'];?>
+             <?php echo $resultado['matricul'];?>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
+             <b><h2><strong>Dados de Endereços:</strong></h2></b>
              <b>Logradouro:</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
@@ -103,6 +104,7 @@ $resultado = mysql_fetch_assoc($result);
              <?php echo $resultado['cep'];?>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
+           <b><h2><strong>Dados de Contatos:</strong></h2></b>
              <b>E-mail:</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
@@ -128,6 +130,7 @@ $resultado = mysql_fetch_assoc($result);
            </div>
 
            <div class="col-xs-9 col-sm-9 col-md-15">
+           <b><h2><strong>Dados de Bancarios:</strong></h2></b>
              <b>Conta:</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
@@ -149,10 +152,41 @@ $resultado = mysql_fetch_assoc($result);
            </div>
 
            <div class="col-xs-9 col-sm-9 col-md-15">
+           <b><h2><strong>Informações para Emprestimos:</strong></h2></b>
              <b>Orgao:</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
              <?php echo $resultado['orgao_id'];?>
+           </div>
+          <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Tipo:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['tipo_id'];?>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Tabela:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['tabela_id'];?>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Prazo:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['prazo_id'];?>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Banco:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['banco_id'];?>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <b>Parceiro:</b>
+           </div>
+           <div class="col-xs-9 col-sm-9 col-md-15">
+             <?php echo $resultado['parceiro_id'];?>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
              <b>Valor.Contrato:</b>
@@ -176,7 +210,7 @@ $resultado = mysql_fetch_assoc($result);
              <b>Promotor:</b>
            </div>
            <div class="col-xs-9 col-sm-9 col-md-15">
-             <?php echo $resultado['promotor_id'];?>
+             <?php echo $resultado['usuarios_id'];?>
            </div>
             <div class="col-xs-9 col-sm-9 col-md-15">
              <b>Banco:</b>

@@ -29,7 +29,8 @@
                 <th>Grafica</th>
                 <th>Contador</th>
                 <th>Manutencao</th>
-                <th>limpeza</th>
+                <th>Limpeza</th>
+                <th>Total</th>
                 <th>Data:</th>
               </tr>
             </thead>
@@ -49,7 +50,8 @@
                 echo "<td>".$linhas['contador']."</td>";
                echo "<td>".$linhas['manutencao']."</td>";
                echo "<td>".$linhas['limpeza']."</td>";
-              echo "<td>".$linhas['created']."</td>";
+               echo "<td>".$linhas['total']."</td>";
+               echo "<td>".$linhas['created']."</td>";
 
 ?>
 <td>

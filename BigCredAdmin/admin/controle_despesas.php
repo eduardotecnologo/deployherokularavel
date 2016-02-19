@@ -60,6 +60,10 @@
                 <label for="snome">Celular</label>
                 <input type="text" name="celular" style="width: 15em" placeholder="Valor da Conta" />
             </div>
+            <div class="campo">
+                <label for="snome">Total</label>
+                <input type="text" name="total" style="width: 15em" placeholder="Valor da Conta" />
+            </div>
             </fieldset>
 
 
