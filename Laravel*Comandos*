@@ -1,0 +1,12 @@
+Instalando o Composer para Download via Composer:
+Run:
+$sudo apt-get update
+Agora, vamos instalar as dependências.
+$sudo apt-get install curl php5-cli git
+Instalando o Composer:
+$curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+Teste Run:
+$composer
+
+Criando o projeto na versão 5.1:
+composer create-project laravel/laravel blog "5.1.*"
