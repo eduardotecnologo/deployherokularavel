@@ -15,3 +15,26 @@ composer create-project laravel/laravel blog "5.1.*"
 
 Criando tabelas:
 Projeto#php artisan make:migration create_products_table --create="products" (Criando a tabela Produtos)
+
+Após criar todas as tabelas irei inserir elas no BD, no meu caso estou utilizando o Postgres
+$php artisan migrate
+
+Obs:Se aparecer uma mensagem de erro de driver, corrija inatalando com o comando:E rode novamento o "$php artisan migrate".
+apt-get install php5-pgsql 
+
+*Criando um model para relacionamento entre as Tabelas:Criei uma pasta dentro de app(app/Models)
+$php artisan make:model Models\Product
+
+*Criando uma nova Migration
+$php artisan make:migration fk_tables
+
+*Criando novas models
+$ php artisan make:model Models\Category
+$ php artisan make:model Models\Brand
+$ php artisan make:model Models\Providers
+
+Fazendo consultas usanado o tinker
+$App\Models\Product::all()
+
+
+
