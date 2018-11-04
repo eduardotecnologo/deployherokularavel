@@ -16,6 +16,7 @@ window.Vue = require('vue');
 
 Vue.component('topo', require('./components/Topo.vue'));
 Vue.component('painel', require('./components/Painel.vue'));
+Vue.component('box', require('./components/Box.vue'));
 
 const app = new Vue({
     el: '#app'
