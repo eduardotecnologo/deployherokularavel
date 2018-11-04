@@ -1,0 +1,15 @@
+[2018-11-04 22:27:52] local.ERROR: Command "run" is not defined.
+
+Did you mean this?
+    schedule:run {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"run\" is not defined.
+
+Did you mean this?
+    schedule:run at /home/developer/Documents/GITHUBE/Estudos-PHP/blogLaraVue/vendor/symfony/console/Application.php:618)
+[stacktrace]
+#0 /home/developer/Documents/GITHUBE/Estudos-PHP/blogLaraVue/vendor/symfony/console/Application.php(229): Symfony\\Component\\Console\\Application->find('run')
+#1 /home/developer/Documents/GITHUBE/Estudos-PHP/blogLaraVue/vendor/symfony/console/Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/developer/Documents/GITHUBE/Estudos-PHP/blogLaraVue/vendor/laravel/framework/src/Illuminate/Console/Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/developer/Documents/GITHUBE/Estudos-PHP/blogLaraVue/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/developer/Documents/GITHUBE/Estudos-PHP/blogLaraVue/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
