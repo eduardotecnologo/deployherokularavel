@@ -8,17 +8,13 @@
                     Teste de Conteúdo...
             <div class="row">
                 <div class="col-md-4">
-                    <box></box> 
+                    <box qtd="80" titulo="Artigos" url="#" cor="orange" icone="fa fa-comments-o"></box> 
                 </div>
                 <div class="col-md-4">
-                    <painel titulo="Conteúdo 2" cor="panel-warning">
-                        Teste de Conteúdo 2....
-                    </painel> 
+                    <box qtd="104" titulo="Usuários" url="#" cor="blue" icone="fa fa-users"></box> 
                 </div>
                 <div class="col-md-4">
-                    <painel titulo="Conteúdo 3">
-                        Teste de Conteúdo 3....
-                    </painel> 
+                     <box qtd="3" titulo="Autores" url="#" cor="red" icone="fa fa-user-circle"></box>  
                 </div>
                 </painel>
             </div>
