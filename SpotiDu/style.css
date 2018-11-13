@@ -14,6 +14,7 @@ body {
     linear-gradient(50deg, #ff4169, #7c26f8);
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 /*Barra de Navegação*/
 .img-logo {
@@ -82,10 +83,48 @@ nav.navbar-transparent {
   background: white;
   color: black;
 }
+/*Services*/
+#services {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.albums {
+  padding: 10px 0 10px 0;
+}
+/*Resources*/
+#resources {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.rotate {
+  -ms-transform: rotate(30deg); /*IE 9*/
+  -webkit-transform: rotate(30deg); /*Chrome, Safari, Opera*/
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
 /*TypeText*/
 h1 {
   font-size: 100px;
   font-weight: 900;
   letter-spacing: -0.05em;
   margin-bottom: 50px;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 700px;
+  letter-spacing: -0.04em;
+}
+h3 {
+  font-size: 35px;
+  font-weight: 700px;
+  letter-spacing: -0.04em;
+}
+#services h2,
+#services h3 {
+  color: #7c25f8;
+}
+#resources h3 {
+  color: #9bf0e1;
 }
