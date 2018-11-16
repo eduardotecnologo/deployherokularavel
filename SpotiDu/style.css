@@ -39,11 +39,14 @@ nav.navbar-transparent {
   background: white;
   margin: 17px 10px;
 }
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a,
+footer .nav a {
   color: white;
 }
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a:hover,
+footer .nav a:hover {
   color: #9bf0e1;
+  background: none;
 }
 /*Imagem de Capa*/
 .capa {
@@ -121,10 +124,24 @@ h3 {
   font-weight: 700px;
   letter-spacing: -0.04em;
 }
+#footer h4 {
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
 #services h2,
 #services h3 {
   color: #7c25f8;
 }
 #resources h3 {
   color: #9bf0e1;
+}
+/*Footer*/
+footer {
+  background: #000;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+.icon-social {
+  float: right;
 }
