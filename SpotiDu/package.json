@@ -1,0 +1,11 @@
+{
+  "name": "spotidu",
+  "version": "1.0.0",
+  "description": "Site clone do Spotify para fins de estudos",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html"
+  },
+  "author": "Eduardo Developer",
+  "license": "ISC"
+}
