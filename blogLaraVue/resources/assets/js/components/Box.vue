@@ -8,7 +8,7 @@
         <div class="icon">
             <i v-bind:class="icone"></i>
         </div>
-        <a href="#" class="small-box-footer">
+        <a v-bind:href="url" class="small-box-footer">
             Mais Informações <i class="fa fa-arrow-circle-right"></i>
         </a>
         </div>
@@ -24,9 +24,6 @@ export default {
   }
 };
 </script>
-
-
-
 
 
 <style media="screen">
