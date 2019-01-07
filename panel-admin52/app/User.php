@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Permission;
 
 class User extends Authenticatable
 {
@@ -23,4 +24,22 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function roles(){
+        $this->belongsToMany(\App\Role::class);
+    }
+
+    public function hasPermission(Permission $permission){
+        //view_post => Manager, Editor
+        return $this->hasAnyRoles($permission->roles);
+    }
+
+    public function hasAnyRoles($roles){
+        if(is_array($roles) || is_object($roles)){
+            foreach($roles as $role){
+                return $this->hasAnyRoles($role);
+            }
+        }
+        return $this->roles->contains('name',$roles);
+    }
 }
