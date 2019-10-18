@@ -24,3 +24,6 @@ Created Migration: 2019_10_17_231300_create_user_socials_table
 https://laravelcollective.com/docs/5.4/html
  edudeveloper@Eduardos-MacBook-Pro  ~/Documents/Git/Estudos-PHP   edudev 
 ▶ composer require "laravelcollective/html":"^5.4.0"
+
+##Criando Controllers ******************************
+▶ php artisan make:controller DashboardController

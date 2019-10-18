@@ -12,6 +12,19 @@
 
 /*
 * ===================================
+* Image Background Login
+* ===================================
+*/
+div.background{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 300px);
+    height: 100%;
+    background:url(../assets/img/img-investimentos.jpg);
+    background-size: cover;
+}
+/*
+* ===================================
 * Style Login
 * ===================================
 */
