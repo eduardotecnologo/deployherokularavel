@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+           -box-sizing: border-box;
+}
+
+/*
+* ===================================
+* Style Login
+* ===================================
+*/
+section#conteudo-view{
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    float: left;
+    width: 300px;
+    height: 100%;
+    background: #4CAE4E;
+}
+section#conteudo-view h1{
+    float: left;
+    width: 100%;
+    font: 3em 'Fredoka One', cursive;
+    color: #f3f3f3;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+section#conteudo-view h2{
+    margin-bottom: 15px;
+    font: .9em 'Fredoka One', cursive;
+    color: #f3f3f3;
+}
+section#conteudo-view form p{
+    font: .9em 'Fredoka One', cursive;
+    color: #f3f3f3;
+    margin-bottom: 5px;
+}
+section#conteudo-view form,
+section#conteudo-view form label{
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+section#conteudo-view form label input{
+    float: left;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #4CAE4E;
+    color: #959595;
+    font: .9em 'Arial';
+}
+section#conteudo-view form label input[type="submit"]{
+    background: #00ff9c;
+    text-align: center;
+    width: 100%;
+    font: 1em 'Arial';
+    color: #959595;
+}
