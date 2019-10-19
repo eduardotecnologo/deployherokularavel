@@ -21,7 +21,7 @@
 
         <p>Acesse o Sistema</p>
         <label>
-            {!! Form::text('username', null, ['class' => 'input', 'placeholder'=> 'Didite seu login']) !!}
+            {!! Form::text('username', null, ['class' => 'input', 'placeholder'=> 'Didite seu E-mail']) !!}
         </label>
         <label>
                 {!! Form::password('password',['placeholder'=> 'Didite sua senha']) !!}
