@@ -26,7 +26,7 @@ class CreateUsersTable extends Migration
 			$table->text('notes')->nullable();
 
 			//Auth data
-			$table->strig('email', 80)->unique();
+			$table->string('email', 80)->unique();
 			$table->string('password', 254)->nullable();
 
 			//Permission

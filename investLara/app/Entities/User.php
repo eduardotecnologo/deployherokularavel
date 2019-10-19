@@ -29,4 +29,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public function setPasswordAdttribute($value){
+        $this->attributes['password'] = env('PASSSWORD_HASH') ? bcrypt('$value') : '$value';
+    }
 }
