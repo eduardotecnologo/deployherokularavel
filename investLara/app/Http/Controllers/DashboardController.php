@@ -19,7 +19,7 @@ class DashboardController extends Controller
     }
 
     public function index(){
-        return "tela de dashboard";
+        return view('user.dashboard');
     }
 
     public function auth(Request $request)
