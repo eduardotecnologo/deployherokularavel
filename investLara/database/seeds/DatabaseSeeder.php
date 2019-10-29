@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'gender'    => 'M',
             'birth'     => '1984-12-24',
             'notes'     => 'Software Developer',
-            'email'     => 'eduardocnologo@hotmail.com',
+            'email'     => 'eduardotecnologo@hotmail.com',
             'password'  => env('PASSSWORD_HASH') ? bcrypt('123456') : '123456',
             // 'status'    => 'ativo',
             // 'permission'=> 'admin'
