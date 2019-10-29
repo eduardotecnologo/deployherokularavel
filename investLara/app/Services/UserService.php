@@ -1,9 +1,12 @@
 <?php
 namespace App\Services;
 
+use Illuminate\Database\QueryException;
+use Prettus\Validator\Exceptions\ValidatorException;
 use Prettus\Validator\Contracts\ValidatorInterface;
 use App\Repositories\UserRepository;
 use App\Validators\UserValidator;
+use Exception;
 
 class UserService
 {
@@ -22,17 +25,26 @@ class UserService
             $this->validator->with($data)->passesOrFail(ValidatorInterface::RULE_CREATE);
             $usuario = $this->repository->create($data);
 
+            // dd($usuario);
+
             return [
-                'success' => true,
-                'message' => "Usuário cadastrado com Sucesso!!!",
-                'data'    => $usuario,
+                'success'  => true,
+                'messages' => "Usuário cadastrado com Sucesso!!!",
+                'data'     => $usuario,
             ];
 
-        }catch(\Exception $e){
-            return [
-                'success' => false,
-                'message' => "Erro ao executar!!",
-            ];
+        }catch(Exception $e){
+            switch(get_class($e)){
+                case QueryException::class     : return ['success' => false, 'messages' =>  $e->getMessage()];
+                case ValidatorException::class : return ['success' => false, 'messages' =>  $e->getMessageBag()];
+                case Exception::class          : return ['success' => false, 'messages' =>  $e->getMessage()];
+                default                        : return ['success' => false, 'messages' =>  $e->getMessage()];
+            }
+            // return [
+            //     'success'  => false,
+            //     // 'messages' => "Erro ao executar o cadastro!!",
+            //     'messages' => $e->getMessageBag(),
+            // ];
         }
     }
     public function update()
