@@ -32,7 +32,11 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('user.index');
+        $user = $this->repository->all();
+        // $users = [];
+        return view('user.index',[
+            'users' => $user,
+        ]);
     }
 
     /**
@@ -48,10 +52,20 @@ class UsersController extends Controller
     {
        $request = $this->service->store($request->all());
 
-       if($request['success'])
-            $usuario = $request['data'];
-       else
-            $usuario = null;
+       //Retorno de mensagens
+       $usuario = $request['success'] ? $request['data'] : null;
+
+        // dd($request);
+
+       session()->flash('success',[
+           'success'  => $request['success'],
+           'messages' => $request['success']
+       ]);
+
+    //    if($request['success'])
+    //         $usuario = $request['data'];
+    //    else
+    //         $usuario = null;
        return view('user.index', [
            'usuario' => $usuario,
        ]);
