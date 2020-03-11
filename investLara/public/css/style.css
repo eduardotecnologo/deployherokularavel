@@ -140,7 +140,7 @@ body{
 #view-content{
     position: fixed;
     float: left;
-    width: 70%;
+    width: 85%;
     height: 100%;
     padding: 20px 20px 20px 300px;
     z-index: 1;

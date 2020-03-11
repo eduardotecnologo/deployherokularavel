@@ -22,39 +22,40 @@
     <form action="_inserir_produto.php" method="POST">
       <div class="form-group">
 
-        <input type="number" class="form-control" placeholder="Digite o número do produto">
+        <input type="number" class="form-control" name="nroproduto" placeholder="Digite o número do produto"
+          autocomplete="off" required>
         <span class="badge badge-danger"> Campo obrigatório!!!</span>
       </div>
       <div class="form-group">
         <label>Nome do Produto</label>
-        <input type="text" class="form-control" placeholder="Digite o nome do produto">
+        <input type="text" class="form-control" name="nameproduto" placeholder="Digite o nome do produto"
+          autocomplete="off" required>
         <span class="badge badge-danger"> Campo obrigatório!!!</span>
       </div>
       <div class="form-group">
         <label>Categorias</label>
-        <select class="form-control">
-          <option></option>
-          <option value="">Periféricos</option>
-          <option value="">Hardwares</option>
-          <option value="">Softwares</option>
-          <option value="">Celulares</option>
+        <select class="form-control" name="categoria">
+          <option>Periféricos</option>
+          <option>Hardwares</option>
+          <option>Softwares</option>
+          <option>Celulares</option>
       </div>
 
       <div class="form-group">
         <label>Qtd de Produto</label>
-        <input type="number" class="form-control" placeholder="Digite a quantidade do produto">
+        <input type="number" class="form-control" name="qtd" placeholder="Digite a quantidade do produto"
+          autocomplete="off" required>
       </div>
       <div class="form-group">
         <label>Fornecedores</label>
-        <select class="form-control">
-          <option></option>
-          <option value="">Fornecedor A</option>
-          <option value="">Fornecedor B</option>
-          <option value="">Fornecedor C</option>
-          <option value="">Fornecedor D</option>
+        <select class="form-control" name="fornecedor">
+          <option>Fornecedor A</option>
+          <option>Fornecedor B</option>
+          <option>Fornecedor C</option>
+          <option>Fornecedor D</option>
         </select>
       </div>
-      <button type="button" class="btn btn-success btn-lg btn-block">Cadastrar</button>
+      <button type="submit" class="btn btn-success btn-lg btn-block">Cadastrar</button>
     </form>
   </div>
   <div class="card text-center">
