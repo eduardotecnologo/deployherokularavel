@@ -3,6 +3,9 @@
 function setInternalServerError($errno, $errstr, $errfile, $errline ){
   echo '<h1>Error</h1>';
 
+  if(!DEBUG){
+    exit;
+  }
 
   echo '<span style="font-weigth: bold; color: red">';
   switch ($errno) {
