@@ -1,21 +1,8 @@
 <?php
-
-function resolve($route){
-  $path = $_SERVER['PATH_INFO'] ?? '/';
-  // $route = '/^\/([a-z]+)$/';
-  $route = '/^' . str_replace('/', '\/' ,$route) . '$/';
-
-  if(preg_match($route, $path, $params)){
-    return $params;
-  }
-
-  return false;
-}
-
-function render($content, $template, array $data = []){
-  $content = __DIR__ . '/templates/' . $content . '.tpl.php';
-  return include __DIR__ . '/templates/' . $template . '.tpl.php';
-}
+require __DIR__ . '/src/error_handler.php';
+require __DIR__ . '/src/resolve-route.php';
+require __DIR__ . '/src/render-route.php';
+require __DIR__ . '/src/conn.php';
 
 if (resolve('/admin/?(.*)')) {
   require __DIR__ . '/admin/routes.php';
