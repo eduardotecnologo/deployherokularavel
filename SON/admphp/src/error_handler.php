@@ -1,6 +1,7 @@
 <?php
 // Mostrando número do erro, mensagem do erro, arquivo do erro e linha do erro
 function setInternalServerError($errno, $errstr, $errfile, $errline ){
+  http_response_code(500);//Tratando erros HTTP
   echo '<h1>Error</h1>';
 
   if(!DEBUG){
