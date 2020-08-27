@@ -1,4 +1,4 @@
-<h3 class="mb-5">Administração de Páginas</h3>
+<h3 class="mb-5">Páginas Cadastradas</h3>
 
 <small>Listagem</small>
 <table class="table table-hover">
