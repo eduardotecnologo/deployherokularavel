@@ -1,11 +1,13 @@
 <template>
   <div class="main">
     <div class="sidebar">
-
+      <!-- Component Sidebar -->
+      <SidebarComponent/>
     </div>
     <div class="content-right">
       <div class="navbar">
-        s
+        <!-- Component Navbar -->
+        <NavbarComponent/>
       </div>
       <div class="pages">
         o
@@ -15,8 +17,17 @@
 </template>
 
 <script>
+// Imports Components
+import SidebarComponent from './components/SidebarComponent';
+import NavbarComponent from './components/NavbarComponent';
+
 export default {
   name:'DashboardComponent',
+  //Register Components
+  components:{
+    SidebarComponent,
+    NavbarComponent
+  }
 }
 </script>
 

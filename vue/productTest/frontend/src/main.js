@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LoginComponent from './pages/Login/LoginComponent';
-import HomeComponent from   './pages/Home/HomeComponent';
+import HomeComponent from './pages/Home/HomeComponent';
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
-
 
 // Rotas
 const routes = [

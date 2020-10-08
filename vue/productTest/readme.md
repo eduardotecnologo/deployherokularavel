@@ -6,3 +6,4 @@ Create project Laravel
 Vue Router
 ▶ npm install vue-router
 ----------
+▶ npm install bootstrap
